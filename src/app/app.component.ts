@@ -11,7 +11,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
   title = 'landing';
   isMenuOpen = false;
-  activePage: string = '';
+  activePage: string = 'Home';
 
   constructor(private route: Router, private scroller: ViewportScroller) {
     this.route.events.subscribe(event => {
@@ -45,17 +45,20 @@ export class AppComponent {
   }
 
   pageNavigate(page: any) {
-    if (page == 'SERVICE') {
-      this.route.navigateByUrl('/our-services')
+    if (page == 'Home') {
+      this.route.navigateByUrl('/#Home')
+    }
+    else if (page == 'About') {
+      this.route.navigateByUrl('/#About')
+    }
+    else if (page == 'Features') {
+      this.route.navigateByUrl('/#Features')
     }
     else if (page == 'CONTACT') {
-      this.route.navigateByUrl('/contact')
+      this.route.navigateByUrl('/#CONTACT')
     }
-    else if (page == 'BLOGS') {
-      this.route.navigateByUrl('/blogs')
-    }
-    else if (page == 'TESTIMONIALS') {
-      this.route.navigate(['/'], { fragment: 'testimonial-section' });
+    else if (page == 'Pricing') {
+      this.route.navigate(['/'], { fragment: 'Pricing' });
     }
   }
 
