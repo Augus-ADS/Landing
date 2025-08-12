@@ -19,22 +19,22 @@
           <div class="d-none d-lg-flex align-items-center ">
             <ul class="navbar-nav flex-row gap-5">
               <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Home'"
-                  (click)="pageNavigate('Home')">Home</a></li>
+                  (click)="pageNavigate('Home')" href="#Home">Home</a></li>
               <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Features'"
-                  (click)="pageNavigate('Features')">Features</a></li>
+                  (click)="pageNavigate('Features')" href="#Features" >Features</a></li>
               <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'About'"
-                  (click)="pageNavigate('About')">About</a></li>
+                  (click)="pageNavigate('About')" href="#About">About</a></li>
                   <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Pricing'"
-                      (click)="pageNavigate('Pricing')">Pricing</a></li>
+                      (click)="pageNavigate('Pricing')" href="#Pricing">Pricing</a></li>
               <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'CONTACT'"
-                  (click)="pageNavigate('CONTACT')">Contact</a></li>
+                  (click)="pageNavigate('CONTACT')" href="#Contact">Contact</a></li>
             </ul>
 
           </div>
          
          <div class="d-flex align-items-center">
-          <span class="Partner-login mc">Partner Login</span>
-          <button class="d-none d-lg-flex btn btn-dark d-flex align-items-center ms-3">
+          <span class="Partner-login d-none d-lg-flex mc"><a href="https://throqtest.com/auth/login" target="_blank" class="Partner-login">Partner Login</a></span>
+          <button class="d-none d-lg-flex btn btn-dark d-flex align-items-center ms-3" data-bs-toggle="modal" data-bs-target="#contactModal">
             Book A Call
           </button>
          </div>
@@ -46,19 +46,25 @@
             <span class="material-icons">close</span>
           </div>
           <ul class="mobile-nav">
-              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Home'"
-                  (click)="pageNavigate('Home')">Home</a></li>
-              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Features'"
-                  (click)="pageNavigate('Features')">Features</a></li>
-              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'About'"
-                  (click)="pageNavigate('About')">About</a></li>
-              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Pricing'"
-                  (click)="pageNavigate('Pricing')">Pricing</a></li>
-              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'CONTACT'"
-                  (click)="pageNavigate('CONTACT')">Contact</a>
-              <button class="btn btn-dark d-flex align-items-center mt-3">
-               Book A Call
-              </button>
+            <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Home'" (click)="pageNavigate('Home')"
+                href="#Home">Home</a></li>
+            <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Features'"
+                (click)="pageNavigate('Features')" href="#Features">Features</a></li>
+            <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'About'" (click)="pageNavigate('About')"
+                href="#About">About</a></li>
+            <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Pricing'" (click)="pageNavigate('Pricing')"
+                href="#Pricing">Pricing</a></li>
+            <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'CONTACT'" (click)="pageNavigate('CONTACT')"
+                href="#Contact">Contact</a>
+                
+              <div class="d-flex align-items-center">
+                <span class="Partner-login mc"><a href="https://throqtest.com/auth/login" target="_blank"
+                    class="Partner-login">Partner Login</a></span>
+                <button class=" btn btn-dark d-flex align-items-center ms-3" data-bs-toggle="modal"
+                  data-bs-target="#contactModal">
+                  Book A Call
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -99,14 +105,7 @@
   </section>
     </div>
   </section>
- 
 
-
-
-
-  
-
-  
     <div class="carousel-container text-center">
       <h5>Join 40+ businesses driving financial growth.</h5>
   
@@ -189,15 +188,9 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
 </div>
 
-<section id="About">
+<section id="About" class="">
   <div class="section-heading d-flex flex-column justify-content-center w-100 mt-5">
     <h2 class="fs-1">Discover how ThroqTest streamlines workflows, optimizes project management, and delivers powerful tools to simplify your
     day-to-day operations.</h2>
@@ -208,11 +201,22 @@
   </div>
 
   <div class="col-lg-12 mb-4 mb-lg-0 text-center">
-    <div class="position-relative" style="height: 100vh;">
-      <!-- Background -->
-      <img src="assets/a1cdfa9d1d3f36c330dfc235d2f8063d.gif" alt="Background Shape" class="img-fluid h-100 w-75">
-  
-     
+    <div class="container">
+      <div class="about ">
+        <!-- Background -->
+
+        
+      <div class="overlay">
+      <!-- Play Button -->
+      <button class="play-btn">
+        <span class="material-symbols-outlined">
+          play_arrow
+        </span>
+      </button>
+      </div>
+      
+
+      </div>
     </div>
   </div>
 </section>
@@ -245,13 +249,13 @@
 </section>
 
 
-<section class="finances-section py-5">
+<section class="finances-section pb-5" id="Features">
   <div class="col-12 py-4 px-lg-5 px-2 m-0">
     <div class="row align-items-center">
 
       <!-- Left Column (Text) -->
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="fw-bold mb-3">Understand Finances &amp; Plan Accordingly.</h2>
+        <h2 class="fw-bold mb-3 finances-section-he pb-4 ">Understand Finances &amp; Plan Accordingly.</h2>
         <p class="mb-4">
           Gain deep insights into your finances, empowering smarter decisions,
           reducing risks, improving efficiency, and fostering sustainable growth for long-term success.
@@ -377,7 +381,7 @@
       <div class="row align-items-center">
         <!-- Left Content -->
         <div class="col-lg-6">
-          <h2 class="fw-bold mb-3">Track and manage your personal financial Growth.</h2>
+          <h2 class="fw-bold mb-3 finances-section-he pb-4">Track and manage your personal financial Growth.</h2>
           <p class="mb-3">Stay on top of your financial health by tracking income, expenses, and savings. Make informed
             decisions to improve your financial stability and achieve long-term goals.</p>
           <p class="mb-4">Easily monitor your personal finances to ensure you're staying on track with your goals. Gain a
@@ -397,7 +401,7 @@
   </section>
 
 
-  <section class="py-5 pricing">
+  <section class="pb-5 pricing" id="Pricing">
     <div class="col-12 py-4 px-lg-5 px-2 m-0">
       <div class="section-heading mt-5">
         <h2>Flexible Pricing Plans Tailored to Your Unique Needs</h2>
@@ -420,7 +424,7 @@
               <li><span class="material-icons  check-icon me-2">check</span> Mobile access</li>
               <li><span class="material-icons  check-icon me-2">check</span> Secure transactions</li>
             </ul>
-            <button class="btn btn-outline-primary mt-3">Choose Plan</button>
+            <button class="btn btn-outline-primary mt-3 w-100">Choose Plan</button>
           </div>
         </div>
   
@@ -440,7 +444,7 @@
               <li><span class="material-icons  check-icon me-2">check</span> Mobile and desktop access</li>
               <li><span class="material-icons  check-icon me-2">check</span> 24/7 monitoring</li>
             </ul>
-            <button class="btn btn-light mt-3">Choose Plan</button>
+            <button class="btn btn-light mt-3 w-100">Choose Plan</button>
           </div>
         </div>
   
@@ -459,7 +463,7 @@
               <li><span class="material-icons  check-icon me-2">check</span> Mobile and desktop access</li>
               <li><span class="material-icons  check-icon me-2">check</span> 24/7 monitoring</li>
             </ul>
-            <button class="btn btn-outline-primary mt-3">Choose Plan</button>
+            <button class="btn btn-outline-primary mt-3 w-100">Choose Plan</button>
           </div>
         </div>
   
@@ -513,7 +517,7 @@
   </section>
 
 
-  <section>
+  <section id="Contact">
     <footer class="bg-white py-5 border-top">
       <div class="col-12 py-4 px-lg-5 px-2 m-0">
         <div class="row">
@@ -581,5 +585,51 @@
     </footer>
 
   </section>
+
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header  btn-primary text-white rounded-top-4">
+          <h5 class="modal-title" id="contactModalLabel">
+            <i class="bi bi-person-circle me-2"></i> Book A Call
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Full Name</label>
+                <input type="text" class="form-control form-control-lg rounded-3" placeholder="Enter full name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control form-control-lg rounded-3" placeholder="Enter email">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Phone</label>
+                <input type="tel" class="form-control form-control-lg rounded-3" placeholder="Enter phone number">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label fw-semibold">Company</label>
+                <input type="text" class="form-control form-control-lg rounded-3" placeholder="Enter company name">
+              </div>
+              <div class="col-12">
+                <label class="form-label fw-semibold">Message</label>
+                <textarea class="form-control form-control-lg rounded-3" rows="3"
+                  placeholder="Type your message"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-light rounded-3 px-4" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success rounded-3 px-4">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
