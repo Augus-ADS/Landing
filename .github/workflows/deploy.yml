@@ -27,5 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main                     # deployment branch
+          branch: gh-pages                     # deployment branch
           folder: dist/landing                  # path to built app (match your outputPath in angular.json)
