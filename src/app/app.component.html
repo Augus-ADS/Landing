@@ -1,0 +1,585 @@
+<div class="overflow-hidden w-100 position-relative">
+
+  <section class=" first-section w-100 d-flex align-items-center justify-content-center">
+    <div class=" col-12 py-4 px-lg-5 px-2 m-0  nav-box">
+      <nav class="navbar custom-navbar rounded-4 ">
+        <div class="container-fluid justify-content-between align-items-center">
+          <a class="navbar-brand d-flex align-items-center mc" (click)="gotoStart()">
+            <!-- <span class="logo-text">INBOX<span class="highlight">IST</span></span>
+      <span class="slogan ms-2">HAPPY INBOXING</span> -->
+            <img style="width: 100px; height: 50px;" src="/assets/logo/logo.png" alt="">
+          </a>
+
+          <!-- Hamburger Icon -->
+          <button class="navbar-toggler d-lg-none" type="button" (click)="toggleMenu()">
+            <span class="material-icons ">menu</span>
+          </button>
+
+          <!-- Desktop Menu -->
+          <div class="d-none d-lg-flex align-items-center ">
+            <ul class="navbar-nav flex-row gap-5">
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Home'"
+                  (click)="pageNavigate('Home')">Home</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Features'"
+                  (click)="pageNavigate('Features')">Features</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'About'"
+                  (click)="pageNavigate('About')">About</a></li>
+                  <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Pricing'"
+                      (click)="pageNavigate('Pricing')">Pricing</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'CONTACT'"
+                  (click)="pageNavigate('CONTACT')">Contact</a></li>
+            </ul>
+
+          </div>
+         
+         <div class="d-flex align-items-center">
+          <span class="Partner-login mc">Partner Login</span>
+          <button class="d-none d-lg-flex btn btn-dark d-flex align-items-center ms-3">
+            Book A Call
+          </button>
+         </div>
+        </div>
+
+        <!-- Mobile Full-screen Overlay Menu -->
+        <div class="mobile-menu" [class.open]="isMenuOpen">
+          <div class="close-btn mc" (click)="closeMenu()">
+            <span class="material-icons">close</span>
+          </div>
+          <ul class="mobile-nav">
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Home'"
+                  (click)="pageNavigate('Home')">Home</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Features'"
+                  (click)="pageNavigate('Features')">Features</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'About'"
+                  (click)="pageNavigate('About')">About</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'Pricing'"
+                  (click)="pageNavigate('Pricing')">Pricing</a></li>
+              <li class="nav-item mc"><a class="nav-link" [class.active]="activePage === 'CONTACT'"
+                  (click)="pageNavigate('CONTACT')">Contact</a>
+              <button class="btn btn-dark d-flex align-items-center mt-3">
+               Book A Call
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <section id="Home">
+    <div class="  col-12 py-4  m-0 ">
+      <div class="row align-items-center">
+        <!-- Left Column -->
+        <div class="col-lg-6 mb-4">
+          <h1 class="fw-bold main-header pt-5">ThroqTest: The Only Tool You Need to Replace Jira, ClickUp, Trello &
+            Monday.com</h1>
+          <p class="mt-3 text-muted sub-heading">
+            AI-powered test management, agile boards, HR tools, and 100% customizable workflows—no code required. All for
+            less than
+            half the cost.
+          </p>
+          <button class="btn btn-primary btn-lg mt-3">Start 30 days free trial</button>
+  
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle ms-1" width="40">
+            <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle" width="40">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" class="rounded-circle me-3" width="40">
+            <div class="">
+              ⭐ ⭐⭐ ⭐⭐<span class="fs-4">5.0</span> <br>
+              <small class="text-muted">From 60+ reviews</small>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-lg-6 d-flex justify-content-end position-relative">
+           <img src="/assets/baners.png" class=" vector-img" alt="">
+           <img src="/assets/banner-img.png" class=" h-75 w-75" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+ 
+
+
+
+
+  
+
+  
+    <div class="carousel-container text-center">
+      <h5>Join 40+ businesses driving financial growth.</h5>
+  
+      <!-- First row: scrolls left -->
+      <div class="scroll-row  py-4 px-lg-5 px-2 m-0  scroll-left mt-4">
+        <div class="carousel-track">
+          <!-- Duplicate logos for infinite scroll effect -->
+          <img src="/assets/scroll/679bac6d44db9e2dfa7f1967_dd101df5c8549d10cad8fd345c5b988f_Fictional company logo (1).svg" alt="echopark">
+          <img src="/assets/scroll/679bac96f42720f3b9c62e35_Fictional company logo (2).svg" alt="goldturtle">
+          <img src="/assets/scroll/679badcea9c50e4b89825a87_32f4e33ff71aabf66ff18b7b4b0e5dcc_Fictional company logo (3).svg" alt="copower">
+          <img src="/assets/scroll/679bade894e511c630114ca9_0e03c99f1a2f07c3926f23c60a58860e_Fictional company logo (4).svg" alt="colormovie">
+          <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg" alt="dot1">
+          <img src="/assets/scroll/679bb2223f6f307bff7e2530_97d55b73f758c670231b0b0a0e39250c_Fictional company logo (7).svg" alt="diamond">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg" alt="cleanenergy">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg" alt="chekpeople">
+          <img src="/assets/scroll/67e482910264ecbee5c61729_GOLDTURTLE-color.svg" alt="bluemount">
+          <img src="/assets/scroll/67e482992d8aa4b3b13970e9_dotcells-color.svg" alt="blueenergy">
+  
+          <!-- Duplicate for smooth infinite scroll -->
+          <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg"
+            alt="dot1">
+          <img src="/assets/scroll/679bb2223f6f307bff7e2530_97d55b73f758c670231b0b0a0e39250c_Fictional company logo (7).svg"
+            alt="diamond">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+            alt="cleanenergy">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+            alt="chekpeople">
+  <img src="/assets/scroll/679bac6d44db9e2dfa7f1967_dd101df5c8549d10cad8fd345c5b988f_Fictional company logo (1).svg"
+    alt="echopark">
+  <img src="/assets/scroll/679bac96f42720f3b9c62e35_Fictional company logo (2).svg" alt="goldturtle">
+  <img src="/assets/scroll/679badcea9c50e4b89825a87_32f4e33ff71aabf66ff18b7b4b0e5dcc_Fictional company logo (3).svg"
+    alt="copower">
+  <img src="/assets/scroll/679bade894e511c630114ca9_0e03c99f1a2f07c3926f23c60a58860e_Fictional company logo (4).svg"
+    alt="colormovie">
+  <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg"
+    alt="dot1">
+        </div>
+      </div>
+  
+      <!-- Second row: scrolls right -->
+      <div class="scroll-row scroll-right mt-4">
+        <div class="carousel-track">
+          <!-- Duplicate logos for infinite scroll effect -->
+          <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg"
+            alt="dot1">
+          <img src="/assets/scroll/679bb2223f6f307bff7e2530_97d55b73f758c670231b0b0a0e39250c_Fictional company logo (7).svg"
+            alt="diamond">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+            alt="cleanenergy">
+          <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+            alt="chekpeople">
+          <img src="/assets/scroll/679bac6d44db9e2dfa7f1967_dd101df5c8549d10cad8fd345c5b988f_Fictional company logo (1).svg"
+            alt="echopark">
+          <img src="/assets/scroll/679bac96f42720f3b9c62e35_Fictional company logo (2).svg" alt="goldturtle">
+          <img src="/assets/scroll/679badcea9c50e4b89825a87_32f4e33ff71aabf66ff18b7b4b0e5dcc_Fictional company logo (3).svg"
+            alt="copower">
+          <img src="/assets/scroll/679bade894e511c630114ca9_0e03c99f1a2f07c3926f23c60a58860e_Fictional company logo (4).svg"
+            alt="colormovie">
+          <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg"
+            alt="dot1">
+  
+          <!-- Duplicate for smooth infinite scroll -->
+            <img src="/assets/scroll/679bac6d44db9e2dfa7f1967_dd101df5c8549d10cad8fd345c5b988f_Fictional company logo (1).svg"
+              alt="echopark">
+            <img src="/assets/scroll/679bac96f42720f3b9c62e35_Fictional company logo (2).svg" alt="goldturtle">
+            <img src="/assets/scroll/679badcea9c50e4b89825a87_32f4e33ff71aabf66ff18b7b4b0e5dcc_Fictional company logo (3).svg"
+              alt="copower">
+            <img src="/assets/scroll/679bade894e511c630114ca9_0e03c99f1a2f07c3926f23c60a58860e_Fictional company logo (4).svg"
+              alt="colormovie">
+            <img src="/assets/scroll/679bb2030f0fce7aa2013dec_38df7824e08759bc7f9f5de1b182f8ff_Fictional company logo (6).svg"
+              alt="dot1">
+            <img src="/assets/scroll/679bb2223f6f307bff7e2530_97d55b73f758c670231b0b0a0e39250c_Fictional company logo (7).svg"
+              alt="diamond">
+            <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+              alt="cleanenergy">
+            <img src="/assets/scroll/679bb24fa4e5ad6f42f74667_c8bfb096f0f55502914133b06e7eec8e_Fictional company logo (9).svg"
+              alt="chekpeople">
+            <img src="/assets/scroll/67e482910264ecbee5c61729_GOLDTURTLE-color.svg" alt="bluemount">
+            <img src="/assets/scroll/67e482992d8aa4b3b13970e9_dotcells-color.svg" alt="blueenergy">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<section id="About">
+  <div class="section-heading d-flex flex-column justify-content-center w-100 mt-5">
+    <h2 class="fs-1">Discover how ThroqTest streamlines workflows, optimizes project management, and delivers powerful tools to simplify your
+    day-to-day operations.</h2>
+    <p class="">
+      Learn how Fintech simplifies payments, enhances financial management,
+      and provides innovative tools to streamline your daily financial tasks.
+    </p>
+  </div>
+
+  <div class="col-lg-12 mb-4 mb-lg-0 text-center">
+    <div class="position-relative" style="height: 100vh;">
+      <!-- Background -->
+      <img src="assets/a1cdfa9d1d3f36c330dfc235d2f8063d.gif" alt="Background Shape" class="img-fluid h-100 w-75">
+  
+     
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <section class="stats-section w-100 overflow-hidden py-5">
+    <div class="  text-center">
+      <div class="row">
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3 class="stat-number">450k</h3>
+          <p class="stat-label">Active Users</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3 class="stat-number">$2.7M+</h3>
+          <p class="stat-label">Monthly Transaction</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3 class="stat-number">445+</h3>
+          <p class="stat-label">Company Partner</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="stat-number">400+</h3>
+          <p class="stat-label">App Downloaded</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+<section class="finances-section py-5">
+  <div class="col-12 py-4 px-lg-5 px-2 m-0">
+    <div class="row align-items-center">
+
+      <!-- Left Column (Text) -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">Understand Finances &amp; Plan Accordingly.</h2>
+        <p class="mb-4">
+          Gain deep insights into your finances, empowering smarter decisions,
+          reducing risks, improving efficiency, and fostering sustainable growth for long-term success.
+        </p>
+
+        <div class="row mb-4">
+          <div class="col-sm-6">
+            <h5 class="fw-bold">Track Financials</h5>
+            <p>Regularly monitor key metrics to ensure stability, profitability, and growth.</p>
+          </div>
+          <div class="col-sm-6">
+            <h5 class="fw-bold">Plan Growth</h5>
+            <p>Develop tailored strategies to optimize cash flow, investments, and expansion opportunities.</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-primary px-4 py-2 fw-bold">Get Started</a>
+      </div>
+
+      <!-- Right Column (Image) -->
+      <div class="col-lg-6 text-center">
+                    <img src="/assets/0f65c227b3198b5e00e6f19a2b4712de.gif" alt="Background Shape" class="img-fluid">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="transactions-section py-5">
+    <div class="col-12 py-4 px-lg-5 px-2 m-0">
+      <div class="row align-items-center">
+  
+        <!-- Left Column (Image + Card) -->
+        <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+          <div class="position-relative">
+            <!-- Background -->
+            <img src="/assets/679c68ace474494ced80aaeb_Frame 1618873008.webp" alt="Background Shape" class="img-fluid rounded shadow">
+  
+            <!-- Card Overlay -->
+            <div
+              class="transfer-card p-4 bg-white rounded-4 shadow position-absolute top-50 start-50 translate-middle text-start col-12 col-md-8" >
+              <h5 class="fw-bold mb-3">Your Transfers</h5>
+  
+              <div class="d-flex align-items-center mb-3">
+                <img src="user1.jpg" alt="User" class="rounded-circle me-3" width="40" height="40">
+                <div class="flex-grow-1">
+                  <p class="mb-0">From Chris Jordan</p>
+                  <small class="text-muted">Today, 16:36</small>
+                </div>
+                <span class="text-success fw-bold">+$50</span>
+              </div>
+  
+              <div class="d-flex align-items-center mb-3">
+                <img src="user2.jpg" alt="User" class="rounded-circle me-3" width="40" height="40">
+                <div class="flex-grow-1">
+                  <p class="mb-0">To Antony Santos</p>
+                  <small class="text-muted">Today, 08:49</small>
+                </div>
+                <span class="text-danger fw-bold">-$27</span>
+              </div>
+  
+              <div class="d-flex align-items-center mb-3">
+                <img src="user3.jpg" alt="User" class="rounded-circle me-3" width="40" height="40">
+                <div class="flex-grow-1">
+                  <p class="mb-0">From Vinicious Jnr</p>
+                  <small class="text-muted">Yesterday, 14:36</small>
+                </div>
+                <span class="text-success fw-bold">+$157</span>
+              </div>
+  
+              <div class="d-flex align-items-center">
+                <img src="user4.jpg" alt="User" class="rounded-circle me-3" width="40" height="40">
+                <div class="flex-grow-1">
+                  <p class="mb-0">From Raul Asencio</p>
+                  <small class="text-muted">Yesterday, 14:36</small>
+                </div>
+                <span class="text-success fw-bold">+$178</span>
+              </div>
+  
+              <a href="#" class="d-block mt-3 text-decoration-none text-primary text-end fw-bold">
+                View all →
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Column (Text) -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3 trans-content ">Take Full Charge Of Your Transactions.</h2>
+          <p class="mb-4 sub-trans-content">
+            Simplify and streamline your transaction processes for better control, accuracy, and efficiency.
+          </p>
+  
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-3 sub-trans-content">
+              <span class="material-icons  check-icon me-2">check</span>
+              Simplify transaction management with easy-to-use, intuitive tools designed for efficiency.
+            </li>
+            <li class="d-flex align-items-center mb-3 sub-trans-content">
+              <span class="material-icons  check-icon me-2">check</span>
+              Ensure accuracy and maintain full control over your finances with real-time tracking.
+            </li>
+            <li class="d-flex align-items-center sub-trans-content">
+              <span class="material-icons  check-icon me-2">check</span>
+              Boost efficiency and streamline all financial processes effortlessly for better results.
+            </li>
+          </ul>
+
+  
+          <a href="#" class="btn btn-primary px-4 mt-5 py-2 fw-bold">Get Started</a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="col-12 py-4 px-lg-5 px-2 m-0 my-5">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Track and manage your personal financial Growth.</h2>
+          <p class="mb-3">Stay on top of your financial health by tracking income, expenses, and savings. Make informed
+            decisions to improve your financial stability and achieve long-term goals.</p>
+          <p class="mb-4">Easily monitor your personal finances to ensure you're staying on track with your goals. Gain a
+            clear view of your spending, savings, and investments, enabling better decisions for a secure financial future.
+          </p>
+                  <a href="#" class="btn btn-primary px-4 mt-5 py-2 fw-bold">Get Started</a>
+
+        </div>
+    
+        <!-- Right Card -->
+        <div class="col-lg-5 offset-lg-1">
+                              <img src="/assets/img.jpg" alt="Background Shape" class="img-fluid">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5 pricing">
+    <div class="col-12 py-4 px-lg-5 px-2 m-0">
+      <div class="section-heading mt-5">
+        <h2>Flexible Pricing Plans Tailored to Your Unique Needs</h2>
+
+      </div>
+      <div class="row g-4 justify-content-center">
+  
+        <!-- Standard Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h5>Standard Plan</h5>
+            <p class="price">$199 <small class="text-muted">USD</small></p>
+            <small class="text-muted">Billed per hour</small>
+            <hr>
+            <h6 class="fw-bold mt-3">What's included</h6>
+            <ul>
+              <li><span class="material-icons  check-icon me-2">check</span> Core tools and features</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Basic reporting and analytics</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Email support</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Mobile access</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Secure transactions</li>
+            </ul>
+            <button class="btn btn-outline-primary mt-3">Choose Plan</button>
+          </div>
+        </div>
+  
+        <!-- Premium Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card pricing-featured">
+            <h5>Premium Plan</h5>
+            <p class="price">$259 <small>USD</small></p>
+            <small>Billed per hour</small>
+            <hr class="border-light">
+            <h6 class="fw-bold mt-3">What's included</h6>
+            <ul>
+              <li><span class="material-icons  check-icon me-2">check</span> Advanced tools and features</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Detailed analytics and reporting</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Email support</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Priority customer support</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Mobile and desktop access</li>
+              <li><span class="material-icons  check-icon me-2">check</span> 24/7 monitoring</li>
+            </ul>
+            <button class="btn btn-light mt-3">Choose Plan</button>
+          </div>
+        </div>
+  
+        <!-- Agency Plan -->
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h5>Agency Plan</h5>
+            <p class="price">$699 <small class="text-muted">USD</small></p>
+            <small class="text-muted">Billed per hour</small>
+            <hr>
+            <h6 class="fw-bold mt-3">What's included</h6>
+            <ul>
+              <li><span class="material-icons  check-icon me-2">check</span> Advanced tools and features</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Detailed analytics</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Priority customer support</li>
+              <li><span class="material-icons  check-icon me-2">check</span> Mobile and desktop access</li>
+              <li><span class="material-icons  check-icon me-2">check</span> 24/7 monitoring</li>
+            </ul>
+            <button class="btn btn-outline-primary mt-3">Choose Plan</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Client">
+    <div class=" col-12 py-4 px-lg-5 px-2 m-0 py-5">
+        <div class="section-heading mt-5">
+          <h2>What Client Say About Our Business</h2>
+        
+        </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col  " *ngFor="let testimonial of testimonials">
+          <div class=" bg-white rounded-4  m-2 h-100 shadow p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img [src]="testimonial.image" alt="{{testimonial.name}}" class="rounded-circle me-3" width="50" height="50">
+              <div>
+                <h6 class="mb-0 fw-bold">{{ testimonial.name }}</h6>
+                <small class="text-muted">{{ testimonial.role }}</small>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <p class="card-text fst-italic ">"{{ testimonial.quote }}"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section>
+    <div
+      class="cta-wrapper d-flex flex-column flex-md-row align-items-center justify-content-between text-start rounded-4 overflow-hidden p-4 p-md-5">
+      <div class="text-content col-md-6 my-5">
+        <h2 class="fw-bold mb-3">Take Charge of Your Finances Today!</h2>
+        <p class="mb-4">Try ThroqTest free for 14 days—no credit card required.<br />
+          Transform your business with powerful financial tools.
+        </p>
+        <button class="btn btn-primary px-4 py-2 fw-semibold">Start 30 days free trial</button>
+      </div>
+      <div class="image-content col-md-6 d-none d-md-block">
+      </div>
+    </div>
+
+  </section>
+
+
+  <section>
+    <footer class="bg-white py-5 border-top">
+      <div class="col-12 py-4 px-lg-5 px-2 m-0">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand d-flex align-items-center mc" (click)="gotoStart()">
+              <!-- <span class="logo-text">INBOX<span class="highlight">IST</span></span>
+                  <span class="slogan ms-2">HAPPY INBOXING</span> -->
+              <img style="width: 100px; height: 50px;" src="/assets/logo/logo.png" alt="">
+            </a>
+            </div>
+            <p class="pe-5  footer-de">
+              ThroqTest Is The Only Next-gen Test Management Tool That Unifies Test cases, Test Automation & API Testing In One
+              Platform.
+
+            </p>
+            <div class="d-flex gap-3 mb-3">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <button class="btn btn-primary px-4 py-2">Get Started</button>
+          </div>
+    
+          <!-- Company Links -->
+          <div class="col-md-3  mb-3">
+            <h6 class="footer-he">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Review</a></li>
+            </ul>
+          </div>
+    
+          <!-- Template Links -->
+          <div class="col-md-2 mb-3">
+            <h6 class=" footer-he">Template</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Style Guide</a></li>
+              <li><a href="#">Licenses</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">404</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h6 class="footer-he">Contact</h6>
+            <ul class="list-unstyled ">
+                <p class="mb-4 footer-de"> <span>Chennai</span> <br>
+                  NO 67/B, 2nd Floor, North Park Street, Ambattur OT, <br> Chennai, Tamil Nadu - 600053 India.
+                </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mb-0 pt-2 footer-de ">© Copyright
+      Alldirectionsource Technologies Pvt Ltd.
+      All Rights Reserved</p>
+    </footer>
+
+  </section>
+
+
