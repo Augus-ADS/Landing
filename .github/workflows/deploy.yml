@@ -16,4 +16,4 @@ jobs:
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages            # target branch
-          folder: dist/<your-app-name> # path to built files
+          folder: dist/landing/browser # path to built files
