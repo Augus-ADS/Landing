@@ -1,0 +1,18 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(13, 110, 253, 0.3);
+}
+
+.feature-points {
+    margin-top: 1rem;
+    color: #495057;
+}
+
+.feature-points li {
+    margin-bottom: 0.4rem;
+}
