@@ -1,0 +1,30 @@
+<section>
+    <!-- features.component.html -->
+    
+    <div class="container py-5">
+        <h1 class="text-center mb-5" style="color: #0d6efd;">
+            ThroqTest — All Features in Detail
+        </h1>
+    
+        <div class="row g-4">
+    
+            <!-- Feature Card -->
+            <div class="col-md-6 col-lg-4" *ngFor="let feature of features">
+                <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="material-icons text-primary fs-2 me-3">{{ feature.icon }}</span>
+                            <h5 class="card-title mb-0">{{ feature.title }}</h5>
+                        </div>
+                        <p class="card-text text-secondary">{{ feature.description }}</p>
+                        <ul class="feature-points ps-3">
+                            <li *ngFor="let point of feature.points">{{ point }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+</section>
